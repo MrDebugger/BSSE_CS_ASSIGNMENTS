@@ -5,7 +5,7 @@ class Clicker:
     def push(self):
         self.counter+=1
     def reset(self):
-        self.counter=1
+        self.counter=0
     def notFound(self):
         print("[-] Button not Found")
     def __str__(self):
