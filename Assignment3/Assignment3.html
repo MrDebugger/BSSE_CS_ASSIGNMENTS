@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu Form</title>
+	<style type="text/css">
+		body {
+			font-family: sans-serif;
+		}
+	</style>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="row">
+	<div class="text-center container col-md-6 col-sm-8">
+		<h1>lunch special</h1>
+		<h2>monday thru friday, 11 am ~ 3 pm</h2>
+		<h1>$9.95 <small>(plus tax)</small></h1>
+		<form class="form" >
+			<h1>sandwich</h1>
+			<div class="text-left">
+				<input type="radio" name="days" class="form-group" > Mon: 
+				<select class="custom-select form-group" name="sandwich">
+					<option>Tomato Mozzarella</option>
+					<option>Chicken Salad</option>
+				</select>
+			</div>
+			<div class="text-left">
+				<input type="radio" name="days" class="form-group" > Tues: 
+				<select class="custom-select form-group" name="sandwich">
+					<option>Greek Salad Wrap</option>
+					<option>Toto Wrap</option>
+				</select>
+			</div>
+			<div class="text-left">
+				<input type="radio" name="days" class="form-group" > Wed: 
+				<select class="custom-select form-group" name="sandwich">
+					<option>Red Pepper hummus</option>
+					<option>Roasted Turkey</option>
+				</select>
+			</div>
+			<div class="text-left">
+				<input type="radio" name="days" class="form-group" > Thur: 
+				<select class="custom-select form-group" name="sandwich">
+					<option>Carrot-Ginger Hummus Wrap</option>
+					<option>Egg Salad</option>
+				</select>
+			</div>
+			<div class="text-left">
+				<input type="radio" name="days" class="form-group"> Fri: 
+				<select class="custom-select" name="sandwich">
+					<option>Dado Wrap</option>
+					<option>Tuna Salad</option>
+				</select>
+				<div class="text-center">
+					<font color="red">75c extra for Gluten Free Bread</font>
+				</div>
+			</div>
+			<h2>snack</h2>
+			<div class="text-left">
+				<select class="custom-select form-group" name="sandwich">
+					<option>Apple</option>
+					<option>Banana</option>
+					<option>Potato Chips</option>
+				</select>
+			</div>
+			<h2>regular size drink</h2>
+			<div class="text-left">
+				<select class="custom-select form-group" name="sandwich">
+					<option>Coffee</option>
+					<option>Iced Coffee</option>
+					<option>Hot Sencha Green Tea</option>
+					<option>iced Sencha Green Tea</option>
+					<option>Hot Keernun Black Tea</option>
+					<option>Iced Keernun Black Tea</option>
+				</select>
+				<div class="text-center">
+					<font color="red">51.50 extra for any regular size Bubble Tea</font><br/>
+					<font color="red">75c extra for Large Drink</font>
+				</div>
+			</div>
+			<h1><i>— NO SUBSTITUTIONS —</i></h1>
+			<button class="btn-info btn">Submit Menu</button>
+		</form>
+	</div>
+</div>
+</body>
+</html>
