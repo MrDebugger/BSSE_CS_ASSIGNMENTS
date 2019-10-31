@@ -15,7 +15,7 @@ class Number:
 
 
 class Calculator:
-	def __inti__(self):
+	def __init__(self):
 		self.ops = {'+':self.add,'-':self.sub,'/':self.div,'*':self.mul}
 	def add(self,op1,op2):
 		return op1+op2
@@ -48,7 +48,7 @@ class Robot:
 	counter = 0
 	def __init__(self):
 		Robot.counter+=1
-		print("Robot Created")
+		print("Robot",self.counter,"Created")
 	def destroy(self):
 		Robot.counter-=1
 		print("Robot Destroyed")
