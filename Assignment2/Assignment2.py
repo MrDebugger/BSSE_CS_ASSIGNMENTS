@@ -2,7 +2,7 @@ class Tasbih:
 	def __init__(self):
 		self.count = 0
 	def add(self):
-		self.count+1
+		self.count+=1
 	def reset(self):
 		self.count = 0
 
