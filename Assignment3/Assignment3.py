@@ -40,7 +40,7 @@ print("Popped element from stack1 is " + str(ts.pop1()))
 ts.push2(40) 
 print("Pushed 40 to Stacks")
 print("Popped element from stack2 is " + str(ts.pop2())) 
-
+"""
 
 # Task 2
 class Queue: 
@@ -79,25 +79,32 @@ print("List",lst)
 printDiagnol(lst) 
 
 # Task 4
-class Queue_Two_Stacks():
-    def __init__(self):
-        self.stack_1 = []
-        self.stack_2 = []
+class Queue: 
+	def __init__(self): 
+		self.s1 = [] 
+		self.s2 = [] 
+	def enQueue(self, x): 
+		while len(self.s1) != 0: 
+			self.s2.append(self.s1[-1]) 
+			self.s1.pop() 
+		self.s1.append(x) 
+		while len(self.s2) != 0: 
+			self.s1.append(self.s2[-1]) 
+			self.s2.pop() 
+	def deQueue(self): 
+		if len(self.s1) == 0: 
+			print("Q is Empty") 
+		x = self.s1[-1] 
+		self.s1.pop() 
+		return x 
 
-    def enqueue(self, item):
-        self.stack_1.append(item)
-
-    def dequeue(self):
-        if len(self.stack_2) == 0:
-            if len(self.stack_1) == 0:
-                print("Queue is Empty")
-                return None
-        
-            while len(self.stack_1) > 0:
-                last_stack_1_item = self.stack_1.pop()
-                self.stack_2.append(last_stack_1_item)
-        return self.stack_2.pop()
-
+q = Queue() 
+print("EnQueue 1:",q.enQueue(1))
+print("EnQueue 2:",q.enQueue(2)) 
+print("EnQueue 3:",q.enQueue(3))
+print("DeQueue:",q.deQueue()) 
+print("DeQueue:",q.deQueue()) 
+print("DeQueue:",q.deQueue()) 
 
 
 
@@ -143,3 +150,4 @@ print('Top Value:',s.top())
 
 print("current size of Stack: ", s.size()) 
 
+"""
