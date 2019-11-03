@@ -40,7 +40,6 @@ print("Popped element from stack1 is " + str(ts.pop1()))
 ts.push2(40) 
 print("Pushed 40 to Stacks")
 print("Popped element from stack2 is " + str(ts.pop2())) 
-"""
 
 # Task 2
 class Queue: 
@@ -56,9 +55,12 @@ class Queue:
 		return self.s1.pop(0) 
 
 q = Queue() 
-print("EnQueue 1:",q.enQueue(1)) 
-print("EnQueue 2:",q.enQueue(2)) 
-print("EnQueue 3:",q.enQueue(3)) 
+print("EnQueue 1") 
+q.enQueue(1)
+print("EnQueue 2") 
+q.enQueue(2)
+print("EnQueue 3") 
+q.enQueue(3)
 print("DeQueue:",q.deQueue()) 
 print("DeQueue:",q.deQueue()) 
 print("DeQueue:",q.deQueue()) 
@@ -99,9 +101,12 @@ class Queue:
 		return x 
 
 q = Queue() 
-print("EnQueue 1:",q.enQueue(1))
-print("EnQueue 2:",q.enQueue(2)) 
-print("EnQueue 3:",q.enQueue(3))
+print("EnQueue 1") 
+q.enQueue(1)
+print("EnQueue 2") 
+q.enQueue(2)
+print("EnQueue 3") 
+q.enQueue(3)
 print("DeQueue:",q.deQueue()) 
 print("DeQueue:",q.deQueue()) 
 print("DeQueue:",q.deQueue()) 
@@ -127,8 +132,8 @@ class Stack:
 	def pop(self): 
 		if (self.q1.empty()): 
 			return
-		self.q1.get() 
 		self.curr_size -= 1
+		return self.q1.get()
 	def top(self): 
 		if (self.q1.empty()): 
 			return -1
@@ -149,5 +154,3 @@ print('Pop Value',s.pop())
 print('Top Value:',s.top()) 
 
 print("current size of Stack: ", s.size()) 
-
-"""
